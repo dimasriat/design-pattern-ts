@@ -1,6 +1,6 @@
 {
   "name": "design-pattern-ts",
-  "module": "index.ts",
+  "module": "patterns/index.ts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
