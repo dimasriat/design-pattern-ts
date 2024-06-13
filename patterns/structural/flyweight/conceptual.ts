@@ -45,7 +45,7 @@ class FlyweightFactory {
     const count = Object.keys(this.flyweights).length;
     console.log(`FlyweightFactory: I have ${count} flyweights:`);
     for (const key in this.flyweights) {
-      console.log("-\t" + key);
+      console.log('-\t' + key);
     }
   }
 }
@@ -82,7 +82,7 @@ function addCarToPoliceDatabase({
   flyweight.operation([plates, owner]);
 }
 
-console.log("==========");
+console.log('==========');
 
 addCarToPoliceDatabase({
   ff: factory,
@@ -93,7 +93,7 @@ addCarToPoliceDatabase({
   color: 'red',
 });
 
-console.log("==========");
+console.log('==========');
 
 addCarToPoliceDatabase({
   ff: factory,
@@ -104,7 +104,7 @@ addCarToPoliceDatabase({
   color: 'red',
 });
 
-console.log("==========");
+console.log('==========');
 
 factory.listFlyweights();
 
