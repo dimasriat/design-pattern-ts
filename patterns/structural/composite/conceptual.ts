@@ -38,7 +38,7 @@ class Composite extends Component {
 
   public remove(component: Component): void {
     const componentIndex = this.children.indexOf(component);
-    
+
     // ???
     this.children.splice(componentIndex, 1);
 
@@ -60,18 +60,18 @@ class Composite extends Component {
 }
 
 function clientCode(component: Component) {
-    // ...
+  // ...
 
-    console.log(`Result: ${component.operation()}`);
+  console.log(`Result: ${component.operation()}`);
 
-    // ...
+  // ...
 }
 
 const simple = new Leaf();
 console.log("Client: I've got a simple component:");
 clientCode(simple);
 
-console.log("==========");
+console.log('==========');
 
 const branch1 = new Composite();
 branch1.add(new Leaf());
@@ -87,21 +87,23 @@ tree.add(branch2);
 console.log("Client: Now I've got a composite tree:");
 clientCode(tree);
 
-console.log("==========");
+console.log('==========');
 
 function clientCode2(c1: Component, c2: Component) {
-    // ...
-    
-    if (c1.isComposite()) {
-        c1.add(c2);
-    }
+  // ...
 
-    console.log(`Result: ${c1.operation()}`);
+  if (c1.isComposite()) {
+    c1.add(c2);
+  }
 
-    // ...
+  console.log(`Result: ${c1.operation()}`);
+
+  // ...
 }
 
-console.log("Client: I don't need to check the components classes when managing the tree:");
+console.log(
+  "Client: I don't need to check the components classes when managing the tree:",
+);
 clientCode2(tree, simple);
 
 /*
