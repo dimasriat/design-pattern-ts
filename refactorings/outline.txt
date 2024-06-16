@@ -1,0 +1,134 @@
+================================================================================
+MINDMAP
+
+Refactoring
+x   What is Refactoring
+    x   clean code
+        x   clean code is obvious for other programmers
+        x   clean code doesn't contain duplication
+        x   clean code contains a minimal number of classes and moving parts
+        x   clean code passes all tests
+        x   clean code is easier and cheaper to maintain
+    x   technical debt
+        x   business pressure
+        x   lack of understanding of the consequences of technical debt
+        x   failing to combat the strict coherence of components
+        x   lack of tests
+        x   lack of documentation
+        x   lack of interaction between team members
+        x   long term simultaneous development in several branches
+        x   delayed refactoring
+        x   lack of compliance monitoring
+        x   incompetence
+    x   when to refactor
+        x   rule of three
+        x   when adding a feature
+        x   when fixing a bug
+        x   during a code review
+    x   how to refactor
+        x   the code should become cleaner
+        x   new functionality shouldn't be created during refactoring
+        x   all existing test must pass after refactoring
+x   Refactoring Techniques
+    x   Composing Methods
+        x   Extract Method
+        x   Inline Method
+        x   Extarct Variable
+        x   Inline Temp
+        x   Replace Temp with Query
+        x   Split Temporary Variable
+        x   Remove Assignment to Parameters
+        x   Replace Method with Method Objects
+        x   Substitute Algorithm
+    x   Moving features between object
+        x   Move method
+        x   Move field
+        x   Extract Class
+        x   Inline Class
+        x   Hide delegate
+        x   Remove Middle Man
+        x   Introduce Foreign Method
+        x   Introduce Local Extension
+    x   Organizing Data
+        x   Change value to Reference
+        x   Change Reference to value
+        x   Duplicate Observed Data
+        x   Self encapsulated Field
+        x   Replace data value with object
+        x   Replace array with object
+        x   Change UNI-directional association to BI-directional
+        x   Change BI-directional association to UNI-directional
+        x   Encapsulate Field
+        x   Encapsulate Collection
+        x   Replace Magic Number with Symbolic Constant
+        x   Replace Type Code with Class
+        x   Replace Type Code with Subclass
+        x   Replace Type Code with State / Strategy
+        x   Replace Subclass with field
+    x   Simplifying Conditional Expressions
+        x   Consolidate Conditional Expression
+        x   Consolidate Duplicate Conditional Fragment
+        x   Decompose Conditional
+        x   Replace Conditional with Polymorphism
+        x   Remove Control Flag
+        x   Replace Nested Conditional with Guard Clauses
+        x   Introduce Null Object
+        x   Introduce Assertion
+    x   Simplifying Method calls
+        x   Add parameters
+        x   Remove parameters
+        x   Rename method
+        x   Separate query from modifier
+        x   parameterize method
+        x   introduce parameter object
+        x   preserve whole object
+        x   remove setting method
+        x   replace parameter with explicit methods
+        x   replace parameter with method calls
+        x   hide method
+        x   replace constructor with factory method
+        x   replace error code with exception
+        x   replace exception with test
+    x   Dealing with Generalization
+        x   pull up field
+        x   pull up method
+        x   pull up constructor body
+        x   push down field
+        x   push down method
+        x   extract subclass
+        x   extract superclass
+        x   extract interface
+        x   collapse hierarchy
+        x   form template method
+        x   replace inheritance with delegation
+        x   replace delegation with inheritance
+x   Code smells
+    x   Bloaters
+        x   long method
+        x   large class
+        x   primitive obsession
+        x   long parameter list
+        x   data clumps
+    x   OO Abusers
+        x   switch statements
+        x   temporary field
+        x   refused bequest
+        x   alternative classes with different interface
+    x   Change preventers
+        x   divergent change
+        x   shotgun surgery
+        x   parallel inheritance hierarchies
+    x   Dispensables
+        x   comments
+        x   duplicate code
+        x   lazy class
+        x   data class
+        x   dead code
+        x   speculative generality
+    x   Couplers
+        x   feature envy
+        x   inappropriate intimacy
+        x   message chains
+        x   middle man
+    x   Other smells
+        x   incomplete library class
