@@ -15,6 +15,11 @@ class MyClassBefore {
   }
 
   // TODO(dims): NEED TO BE REFACTORED
+  // Problem:
+  //    You have a code fragment that can be grouped together.
+  // Solution:
+  //    Move this code to a separate new method (or function) and replace the 
+  //    old code with a call to the method.
   public printOwing(): void {
     this.printBanner();
 
