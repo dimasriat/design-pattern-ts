@@ -3,7 +3,7 @@
   "module": "patterns/index.ts",
   "type": "module",
   "scripts": {
-    "format": "prettier --write \"patterns/**/*.ts\""
+    "format": "prettier --write \"(patterns|refactorings)/**/*.ts\""
   },
   "devDependencies": {
     "@types/bun": "latest"
