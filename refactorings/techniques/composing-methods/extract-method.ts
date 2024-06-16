@@ -44,7 +44,6 @@ class MyClassAfter {
   public printOwing(): void {
     this.printBanner();
 
-    // print details
     this.printDetails();
   }
 
