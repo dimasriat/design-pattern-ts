@@ -3,3 +3,16 @@ o   list all the outlines
 o   take a peek on abritrary points
 o   question
     o   how to memorize fast?
+o   create simple extract method example
+x   todo
+    x   add more description for extract method
+        x   problem
+        x   solution
+        x   why
+        x   benefit
+        x   how to
+        x   related
+            x   anti-refactoring
+            x   similiar
+            x   help other refactorings
+            x   eliminate smell
