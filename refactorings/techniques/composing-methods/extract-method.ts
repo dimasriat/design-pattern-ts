@@ -14,11 +14,13 @@ class MyClassBefore {
     console.log('THIS IS A BANNER');
   }
 
-  // TODO(dims): NEED TO BE REFACTORED
+  // TODO(dims): SMELLY CODE
+  // https://refactoring.guru/extract-method
+  //
   // Problem:
   //    You have a code fragment that can be grouped together.
   // Solution:
-  //    Move this code to a separate new method (or function) and replace the 
+  //    Move this code to a separate new method (or function) and replace the
   //    old code with a call to the method.
   public printOwing(): void {
     this.printBanner();
