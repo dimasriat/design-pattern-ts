@@ -66,17 +66,24 @@ class VaultCalculator {
 
   public async getApy(): Promise<number> {
     const apr = await this.getApr();
-    const apy =
-      (1 + apr / this.compoundedPerYear) ** this.compoundedPerYear * 100;
+    const apy = this.calculateApy(apr, this.compoundedPerYear);
 
     return apy;
+  }
+
+  public calculateApy(apr: number, compoundedPerYear: number): number {
+    return (1 + apr / compoundedPerYear) ** compoundedPerYear * 100;
   }
 
   public async getApr(): Promise<number> {
     const tvlUsd = await this.vault.getTvlUsd();
     const dailyRewardUsd = await this.vault.getDailyRewardUsd();
-    const apr = (dailyRewardUsd * 365) / tvlUsd;
+    const apr = this.calculateApr(dailyRewardUsd, tvlUsd);
 
     return apr;
+  }
+
+  public calculateApr(dailyRewardUsd: number, tvlUsd: number): number {
+    return (dailyRewardUsd * 365) / tvlUsd;
   }
 }
